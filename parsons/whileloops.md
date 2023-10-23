@@ -4,12 +4,12 @@ title: While Loops - Testing
 ---
 
 ## Problem 1
-<div id="Testing 1-sortableTrash" class="sortable-code"></div> 
-<div id="Testing 1-sortable" class="sortable-code"></div> 
+<div id="Testing1-sortableTrash" class="sortable-code"></div> 
+<div id="Testing1-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="Testing 1-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="Testing 1-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="Testing1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Testing1-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
 (function(){
@@ -20,7 +20,7 @@ title: While Loops - Testing
     "	print(&quot;Less than 10&quot;)\n" +
     "number = input(&quot;Enter a number&quot;) #distractor";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "Testing 1-sortable",
+    "sortableId": "Testing1-sortable",
     "max_wrong_lines": 1,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -28,15 +28,15 @@ title: While Loops - Testing
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Testing 1-sortableTrash"
+    "trashId": "Testing1-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shufffleLines();
-  $("#Testing 1-newInstanceLink").click(function(event){ 
+  $("#Testing1-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#Testing 1-feedbackLink").click(function(event){ 
+  $("#Testing1-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
@@ -117,18 +117,18 @@ Just another problem
 
 # Problem 4
 Testing a simple one
-<div id="Next Test-sortableTrash" class="sortable-code"></div> 
-<div id="Next Test-sortable" class="sortable-code"></div> 
+<div id="NextTest-sortableTrash" class="sortable-code"></div> 
+<div id="NextTest-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
 <p> 
-    <input id="Next Test-feedbackLink" value="Get Feedback" type="button" /> 
-    <input id="Next Test-newInstanceLink" value="Reset Problem" type="button" /> 
+    <input id="NextTest-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="NextTest-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
   var initial = "print(&quot;Simpler test&quot;)\n" +
     "print(&quot;Please work&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
-    "sortableId": "Next Test-sortable",
+    "sortableId": "NextTest-sortable",
     "max_wrong_lines": 1,
     "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
@@ -136,15 +136,15 @@ Testing a simple one
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Next Test-sortableTrash"
+    "trashId": "NextTest-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
-  $("#Next Test-newInstanceLink").click(function(event){ 
+  $("#NextTest-newInstanceLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.shuffleLines(); 
   }); 
-  $("#Next Test-feedbackLink").click(function(event){ 
+  $("#NextTest-feedbackLink").click(function(event){ 
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
