@@ -1,6 +1,6 @@
 ---
 layout: default
-title: While Loops - Problem 2
+title: While Loops - Level 2
 description: 
 ---
 
