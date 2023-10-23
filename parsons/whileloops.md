@@ -79,3 +79,40 @@ Just another problem
   });
 })();
 </script>
+
+# Problem 4
+Testing a simple one
+<div id="Next Test-sortableTrash" class="sortable-code"></div> 
+<div id="Next Test-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="Next Test-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="Next Test-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "print(&quot;Simpler test&quot;)\n" +
+    "print(&quot;Please work&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "Next Test-sortable",
+    "max_wrong_lines": 1,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "Next Test-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#Next Test-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#Next Test-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
