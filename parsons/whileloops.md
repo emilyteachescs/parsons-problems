@@ -1,4 +1,7 @@
-# While Loops - Testing
+---
+layout: default
+title: While Loops - Testing
+---
 
 ## Problem 1
 <div id="Testing 1-sortableTrash" class="sortable-code"></div> 
