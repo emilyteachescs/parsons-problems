@@ -55,7 +55,6 @@ Just another problem
     <input id="p1-newInstanceLink" value="Reset Problem" type="button" />
 </p>
 <script type="text/javascript">
-(function() {
   var initial = "print(\"Hello\")\n" +
     "print(\" \")\n" +
     "print(\"World\")\n" +
@@ -80,7 +79,6 @@ Just another problem
       event.preventDefault();
       parsonsPuzzle.getFeedback();
   });
-})();
 </script>
 
 # Problem 4
@@ -93,7 +91,6 @@ Testing a simple one
     <input id="Next Test-newInstanceLink" value="Reset Problem" type="button" /> 
 </p> 
 <script type="text/javascript"> 
-(function(){
   var initial = "print(&quot;Simpler test&quot;)\n" +
     "print(&quot;Please work&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
@@ -117,5 +114,4 @@ Testing a simple one
       event.preventDefault(); 
       parsonsPuzzle.getFeedback(); 
   }); 
-})(); 
 </script>
