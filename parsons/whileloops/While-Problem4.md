@@ -1,6 +1,6 @@
 ---
 layout: default
-title: While Loops - Problem 4
+title: While Loops - Level 4
 ---
 
 Arrange the lines of code so that the program will ask the user to enter the secret password. If the password is not "computerscience" then it should prompt them to try again until they enter the correct password. 
