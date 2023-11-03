@@ -12,7 +12,7 @@ There is one block you will **not** need to use!
 (function(){
   var initial = "for x in range(10):\n" +
     "	num = x * 10\n" +
-    "    print(num)\n" +
+    "	print(num)\n" +
     "for x in range(100) #distractor";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "ForLoops-1-sortable",
